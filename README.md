@@ -37,13 +37,6 @@ Actualmente estoy profundizando en Ciencia de Datos en Platzi y desarrollando so
 
 [Ver Código Fuente →](https://github.com/Caero-Nahuel/Proyecto-analisis-de-cohortes-ecommerce)
 
----
-
-## 📈 GitHub Stats
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=Caero-Nahuel&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" />
-</div>
 
 ---
 
