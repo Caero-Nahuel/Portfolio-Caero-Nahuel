@@ -42,10 +42,7 @@ Actualmente estoy profundizando en Ciencia de Datos en Platzi y desarrollando so
 ## 📈 GitHub Stats
 
 <div align="center">
-<a href="https://github.com/Caero-Nahuel">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Caero-Nahuel&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Caero-Nahuel&layout=compact&theme=tokyonight"/>
-</a>
+  <img src="https://streak-stats.demolab.com?user=Caero-Nahuel&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" />
 </div>
 
 ---
