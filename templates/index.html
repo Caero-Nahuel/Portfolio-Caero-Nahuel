@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ data.header.name }} - Data Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="header-section">
+            <h1>{{ data.header.name }}</h1>
+            <p class="role">{{ data.header.title }}</p>
+        </header>
+
+        <section class="about-section">
+            <p class="bio-text">{{ data.about.description }}</p>
+        </section>
+
+        <section class="projects-section">
+            <h2>Proyectos</h2>
+            <div class="projects-grid">
+                {% for project in data.projects %}
+                <article class="project-card">
+                    <h3>{{ project.title }}</h3>
+                    <p style="color: #cbd5e1;">{{ project.description }}</p>
+                    
+                    <div class="tech-stack">
+                        {% for tech in project.stack %}
+                        <span class="tech-tag">{{ tech }}</span>
+                        {% endfor %}
+                    </div>
+
+                    <a href="{{ project.link }}" target="_blank" class="project-link">
+                        Ver Repositorio &rarr;
+                    </a>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Conectemos</h2>
+            <div class="contact-links">
+                <a href="mailto:{{ data.contact.email }}" class="contact-btn">Email</a>
+                <a href="{{ data.contact.linkedin }}" target="_blank" class="contact-btn">LinkedIn</a>
+                <a href="{{ data.contact.github }}" target="_blank" class="contact-btn">GitHub</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2024 {{ data.header.name }}. Data Science Portfolio.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
